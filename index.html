@@ -1,0 +1,1109 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Growvix</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="Assets/css/style.css"
+          rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+            <div class="container">
+
+                <a class="navbar-brand"
+                   href="#">
+
+                    Growvix
+
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse"
+                     id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#services">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#portfolio">
+                                Recent Works
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#about">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#clients">
+                                Our Clients
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item" style="display:none;">
+                            <a class="nav-link"
+                               href="#pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <!-- HERO SECTION -->
+
+            <section class="hero-section" id="home">
+
+                <div class="hero-bg-shape1"></div>
+                <div class="hero-bg-shape2"></div>
+
+                <div class="container">
+
+                    <div class="row align-items-center min-vh-100">
+
+                        <!-- LEFT -->
+
+                        <div class="col-lg-6 hero-content">
+
+                            <h1 class="hero-title">
+
+                                Building <br />
+
+                                Modern <span>Digital</span> <br />
+
+                                Experiences
+
+                            </h1>
+
+                            <p class="hero-subtitle">
+
+                                We help businesses grow with premium websites,
+                                branding, CRM systems and modern digital solutions.
+
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a href="#portfolio"
+                                   class="custom-btn">
+
+                                    View Portfolio
+
+                                </a>
+
+                                <a href="#contact"
+                                   class="custom-btn2">
+
+                                    Contact Us
+
+                                </a>
+
+                            </div>
+
+                            <!-- STATS -->
+
+                            <div class="hero-stats">
+
+                                <div class="stat-box">
+
+                                    <h3>50+</h3>
+
+                                    <p>Projects</p>
+
+                                </div>
+
+                                <div class="stat-box">
+
+                                    <h3>30+</h3>
+
+                                    <p>Clients</p>
+
+                                </div>
+
+                                <div class="stat-box">
+
+                                    <h3>4+</h3>
+
+                                    <p>Years Exp.</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT -->
+
+                        <div class="col-lg-6 hero-image-wrapper text-center" style="margin-top:-170px;">
+
+                            <img src="Assets/images/hero-img.svg"
+                                 class="img-fluid hero-img" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SERVICES -->
+
+            <section id="services" class="hero-section">
+
+                <div class="container text-center">
+
+                    <span class="section-badge" style="display:none;">
+
+                        Services
+
+                    </span>
+
+                    <h2 class="section-title mt-4">
+
+                        What We Do
+
+                    </h2>
+
+                    <div class="row mt-5 g-4">
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    Website Development
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Modern and responsive websites designed to deliver smooth performance and professional user experiences.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    Branding
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Creative and unique logo designs that help businesses build strong and memorable brand identities.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    CRM Solutions
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Smart CRM systems developed to manage customers, improve workflows, and increase business productivity.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    Poster Design
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Professional poster and banner designs created to promote businesses with attractive visual communication.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    Graphic Design
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Modern graphic designs developed for branding, marketing, and professional business presentation needs.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                </div>
+
+                                <h4 class="mt-4">
+
+                                    E-Commerce Solutions
+
+                                </h4>
+
+                                <p class="mt-3">
+
+                                    Secure and scalable e-commerce solutions designed to create smooth and professional online shopping experiences.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================================
+         PORTFOLIO SECTION
+    ========================================= -->
+
+            <section id="portfolio" class="hero-section">
+
+                <div class="container text-center">
+
+                    <span class="section-badge" style="display:none;">
+
+                        Portfolio
+
+                    </span>
+
+                    <h2 class="section-title mt-4">
+
+                        Our Recent Work
+
+                    </h2>
+
+                    <p class="hero-subtitle mx-auto mt-3">
+
+                        Premium modern websites crafted for businesses,
+                        restaurants and digital brands.
+
+                    </p>
+
+                    <div class="portfolio-marquee mt-5">
+
+                        <div class="marquee-track">
+
+                            <!-- PROJECT 1 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/REST1.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Royal Feast
+                                </h4>
+
+                                <p class="mt-3">
+                                    Creative restaurant platform crafted to showcase menus, ambiance, and online reservations professionally.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/RoyalFeast/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 2 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/REST2.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Crown Curry
+                                </h4>
+
+                                <p class="mt-3">
+                                    Elegant food and dining website designed with stylish visuals and responsive layouts.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/CrownCurry/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 3 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/REST3.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Pato Restaurant
+                                </h4>
+
+                                <p class="mt-3">
+                                    Premium restaurant website with modern aesthetics and seamless user experience.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/Pato/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 4 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/GYM1.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Fitness Gym
+                                </h4>
+
+                                <p class="mt-3">
+                                    High-performance fitness website developed with energetic design and responsive functionality.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/GYM1/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 5 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/GYM2.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Gym
+                                </h4>
+
+                                <p class="mt-3">
+                                    Professional gym platform created to promote training programs and fitness services effectively.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/GYM2/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 6 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/GYM3.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Training Studio
+                                </h4>
+
+                                <p class="mt-3">
+                                    Modern fitness website designed with powerful visuals and dynamic user experience.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/GYM3/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 7 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/CAFE2.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    Four Cofeee
+                                </h4>
+
+                                <p class="mt-3">
+                                    Creative café website built to highlight menu items, relaxing atmosphere, and premium customer experience.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/FourCofee/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                            <!-- PROJECT 8 -->
+                            <div class="portfolio-card">
+                                <img src="Assets/images/CAFE1.png"
+                                     class="img-fluid portfolio-img" />
+
+                                <h4 class="mt-4">
+                                    SWAT
+                                </h4>
+
+                                <p class="mt-3">
+                                    Modern café platform crafted with warm visuals and smooth user experience to attract coffee lovers.
+                                </p>
+
+                                <a href="https://nitesh320.github.io/SWATCOFFEE/"
+                                   class="custom-btn mt-3">
+
+                                    Live Preview
+
+                                </a>
+                            </div>
+
+                        </div>
+                        <style>
+                            .portfolio-marquee {
+                                overflow: hidden;
+                                width: 100%;
+                                position: relative;
+                            }
+
+                            .marquee-track {
+                                display: flex;
+                                gap: 25px;
+                                width: max-content;
+                                animation: marquee 25s linear infinite;
+                            }
+
+                            .portfolio-card {
+                                min-width: 320px;
+                                max-width: 320px;
+                                flex-shrink: 0;
+                            }
+
+                            .marquee-track:hover {
+                                animation-play-state: paused;
+                            }
+
+                            @keyframes marquee {
+                                0% {
+                                    transform: translateX(0);
+                                }
+
+                                100% {
+                                    transform: translateX(-50%);
+                                }
+                            }
+                        </style>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <!-- ABOUT US SECTION -->
+            <section id="about" class="hero-section">
+
+                <div class="container text-center">
+
+                    <h2 class="section-title mt-4">
+                        About Growvix
+                    </h2>
+
+                    <div class="row mt-5 g-4">
+
+                        <!-- POINT 1 -->
+                        <div class="col-lg-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <h4 class="mt-4">Our Mission</h4>
+                                <p class="mt-3">
+                                    To help startups and businesses establish a strong digital presence
+                                    through modern design and technology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- POINT 2 -->
+                        <div class="col-lg-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                </div>
+                                <h4 class="mt-4">Our Vision</h4>
+                                <p class="mt-3">
+                                    To become a trusted digital partner for brands by delivering creative,
+                                    innovative and result-driven solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- POINT 3 -->
+                        <div class="col-lg-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-rocket"></i>
+                                </div>
+                                <h4 class="mt-4">Our Goal</h4>
+                                <p class="mt-3">
+                                    To deliver high-quality websites and digital products that boost growth,
+                                    engagement and conversions.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CLIENTS SECTION -->
+            <section id="clients" class="hero-section clients-soft">
+
+                    <div class="container text-center">
+
+                        <h2 class="section-title mt-4">
+                            Clients We've Worked With
+                        </h2>
+
+                        <p class="hero-subtitle mx-auto mt-3">
+                            We’ve helped businesses across multiple industries build powerful digital experiences.
+                        </p>
+
+                        <!-- MARQUEE -->
+                        <div class="clients-marquee mt-5">
+
+                            <div class="clients-track">
+
+                                <!-- RESTAURANT -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-utensils"></i></div>
+                                    <h5>Royal Feast</h5>
+                                    <p>Restaurant Brand</p>
+                                </div>
+
+                                <!-- FOOD BRAND -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-burger"></i></div>
+                                    <h5>Crown Curry</h5>
+                                    <p>Food Chain</p>
+                                </div>
+
+                                <!-- CAFE -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-mug-hot"></i></div>
+                                    <h5>Bean & Brew</h5>
+                                    <p>Café Business</p>
+                                </div>
+
+                                <!-- GYM -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-dumbbell"></i></div>
+                                    <h5>FitZone Gym</h5>
+                                    <p>Fitness Studio</p>
+                                </div>
+
+                                <!-- CORPORATE / AGENCY -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-briefcase"></i></div>
+                                    <h5>NextCorp</h5>
+                                    <p>Corporate Website</p>
+                                </div>
+
+                                <!-- STARTUP -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-rocket"></i></div>
+                                    <h5>StartupX</h5>
+                                    <p>Tech Startup</p>
+                                </div>
+
+                                <!-- E-COMMERCE -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <h5>ShopNova</h5>
+                                    <p>E-Commerce Store</p>
+                                </div>
+
+                                <!-- REAL ESTATE -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-building"></i></div>
+                                    <h5>Prime Estates</h5>
+                                    <p>Real Estate Portal</p>
+                                </div>
+
+                                <!-- EDUCATION -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+                                    <h5>EduSmart</h5>
+                                    <p>Learning Platform</p>
+                                </div>
+
+                                <!-- HEALTHCARE -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <h5>MediCare Plus</h5>
+                                    <p>Healthcare Website</p>
+                                </div>
+
+                                <!-- TRAVEL -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-plane"></i></div>
+                                    <h5>SkyVoyage</h5>
+                                    <p>Travel Agency</p>
+                                </div>
+
+                                <!-- FINANCE -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-coins"></i></div>
+                                    <h5>FinEdge</h5>
+                                    <p>Finance Platform</p>
+                                </div>
+
+                                <!-- CLONES (smooth loop) -->
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-briefcase"></i></div>
+                                    <h5>NextCorp</h5>
+                                    <p>Corporate Website</p>
+                                </div>
+
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <h5>ShopNova</h5>
+                                    <p>E-Commerce Store</p>
+                                </div>
+
+                                <div class="client-card">
+                                    <div class="client-avatar"><i class="fa-solid fa-plane"></i></div>
+                                    <h5>SkyVoyage</h5>
+                                    <p>Travel Agency</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <style>
+                        /* SECTION BACKGROUND (LIGHT SOFTWARE STYLE) */
+                        .clients-soft {
+                            background: linear-gradient(180deg, #f7f9fc, #eef2f7);
+                            padding: 90px 0;
+                        }
+
+                        /* MARQUEE */
+                        .clients-marquee {
+                            overflow: hidden;
+                            width: 100%;
+                        }
+
+                        .clients-track {
+                            display: flex;
+                            gap: 25px;
+                            width: max-content;
+                            animation: move 20s linear infinite;
+                        }
+
+                        /* CARD (SOFT GLASS STYLE) */
+                        .client-card {
+                            min-width: 230px;
+                            max-width: 230px;
+                            background: rgba(255, 255, 255, 0.7);
+                            backdrop-filter: blur(12px);
+                            padding: 22px;
+                            border-radius: 16px;
+                            color: #222;
+                            text-align: center;
+                            flex-shrink: 0;
+                            transition: 0.4s ease;
+                            border: 1px solid rgba(0, 0, 0, 0.05);
+                        }
+
+                            .client-card:hover {
+                                transform: translateY(-10px) scale(1.05);
+                                box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+                                border: 1px solid rgba(0, 123, 255, 0.25);
+                            }
+
+                        /* ICON */
+                        .client-avatar {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            margin: 0 auto 12px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 20px;
+                            color: #0d6efd;
+                            background: rgba(13, 110, 253, 0.08);
+                            border: 1px solid rgba(13, 110, 253, 0.2);
+                            transition: 0.3s ease;
+                        }
+
+                        .client-card:hover .client-avatar {
+                            transform: rotate(6deg) scale(1.1);
+                            color: #6610f2;
+                            border-color: rgba(102, 16, 242, 0.3);
+                        }
+
+                        .client-card h5 {
+                            margin: 10px 0 5px;
+                            font-size: 16px;
+                        }
+
+                        .client-card p {
+                            font-size: 13px;
+                            opacity: 0.7;
+                        }
+
+                        .clients-track:hover {
+                            animation-play-state: paused;
+                        }
+
+                        @keyframes move {
+                            0% {
+                                transform: translateX(0);
+                            }
+
+                            100% {
+                                transform: translateX(-50%);
+                            }
+                        }
+                    </style>
+
+                </section>
+            <!-- PRICING -->
+
+            <section id="pricing" class="hero-section" style="display:none;">
+
+                <div class="container text-center">
+
+                    <span class="section-badge" style="display:none;">
+
+                        Pricing
+
+                    </span>
+
+                    <h2 class="section-title mt-4">
+
+                        Flexible Packages
+
+                    </h2>
+
+                    <div class="row mt-5 g-4">
+
+                        <div class="col-lg-4">
+
+                            <div class="pricing-card">
+
+                                <h3>Starter</h3>
+
+                                <div class="price">
+
+                                    ₹15k
+
+                                </div>
+
+                                <ul>
+
+                                    <li>Static Website</li>
+                                    <li>Responsive Design</li>
+                                    <li>Contact Form</li>
+                                    <li>Basic SEO</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="pricing-card active-card">
+
+                                <h3>Professional</h3>
+
+                                <div class="price">
+
+                                    ₹25k
+
+                                </div>
+
+                                <ul>
+
+                                    <li>Dynamic Website</li>
+                                    <li>Admin Panel</li>
+                                    <li>Database</li>
+                                    <li>Premium UI</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="pricing-card">
+
+                                <h3>Enterprise</h3>
+
+                                <div class="price">
+
+                                    ₹50k+
+
+                                </div>
+
+                                <ul>
+
+                                    <li>CRM Software</li>
+                                    <li>Advanced Features</li>
+                                    <li>API Integration</li>
+                                    <li>Custom Solution</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CONTACT -->
+
+            <section id="contact" class="hero-section">
+
+                <div class="container">
+
+                    <div class="contact-box">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+
+                                <span class="section-badge" style="display:none;">
+
+                                    Contact
+
+                                </span>
+
+                                <h2 class="section-title mt-4">
+
+                                    Let's Work Together
+
+                                </h2>
+
+
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <input type="text"
+                                       class="form-control custom-input mb-3"
+                                       placeholder="Your Name" />
+
+                                <input type="email"
+                                       class="form-control custom-input mb-3"
+                                       placeholder="Your Email" />
+
+                                <textarea class="form-control custom-input mb-3"
+                                          rows="5"
+                                          placeholder="Your Message"></textarea>
+
+                                <button class="custom-btn border-0" onclick="sendWhatsApp()">
+
+                                    Send Message
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </asp:ContentPlaceHolder>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="container text-center">
+
+                <h2 class="footer-logo">
+                    Growvix
+                </h2>
+
+                <p class="footer-text">
+                    Building Modern Digital Experiences
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                </div>
+
+                <p class="copyright">
+                    © 2026 Growvix. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
