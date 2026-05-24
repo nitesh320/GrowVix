@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Growvix - Industries Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins',sans-serif;
+            background: #f8f9ff;
+        }
+
+        /* NAVBAR */
+        .custom-navbar {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: 800;
+            color: #4f46e5 !important;
+        }
+
+        /* HEADER */
+        .page-header {
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+            .page-header h1 {
+                font-size: 52px;
+                font-weight: 800;
+                color: #312e81;
+            }
+
+            .page-header p {
+                color: #64748b;
+                max-width: 600px;
+                margin: auto;
+            }
+
+        /* SEARCH */
+        .search-box {
+            max-width: 500px;
+            margin: 30px auto;
+        }
+
+            .search-box input {
+                padding: 16px 20px;
+                border-radius: 50px;
+                border: 1px solid #ddd;
+                width: 100%;
+                outline: none;
+            }
+
+        /* CARD */
+        .industry-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #eee;
+            height: 100%;
+        }
+
+            .industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(79,70,229,0.15);
+}
+
+        .industry-icon {
+    font-size: 32px;
+    color: #4f46e5;
+    margin-bottom: 15px;
+        transition: 0.3s;
+
+}
+        .industry-card:hover .industry-icon {
+    transform: scale(1.25) rotate(5deg);
+}
+        /* 🌈 PRO COLOR SYSTEM (AUTO RANDOM LOOK) */
+.item:nth-child(10n+1) .industry-icon { color: #4f46e5; }
+.item:nth-child(10n+2) .industry-icon { color: #ef4444; }
+.item:nth-child(10n+3) .industry-icon { color: #10b981; }
+.item:nth-child(10n+4) .industry-icon { color: #f59e0b; }
+.item:nth-child(10n+5) .industry-icon { color: #06b6d4; }
+.item:nth-child(10n+6) .industry-icon { color: #8b5cf6; }
+.item:nth-child(10n+7) .industry-icon { color: #ec4899; }
+.item:nth-child(10n+8) .industry-icon { color: #22c55e; }
+.item:nth-child(10n+9) .industry-icon { color: #3b82f6; }
+.item:nth-child(10n+10) .industry-icon { color: #f97316; }
+        .industry-card h5 {
+            font-weight: 700;
+            color: #1e1b4b;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #eef2ff;
+            padding: 60px 0;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+            .footer h3 {
+                font-weight: 800;
+                color: #312e81;
+            }
+
+            .footer p {
+                color: #64748b;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Growvix</a>
+        </div>
+    </nav>
+    
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Industries Demo</h1>
+        <p>Explore 1000+ industry-based website demo ideas built for modern businesses.</p>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search industry...">
+        </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="container">
+        <div class="row g-4" id="grid">
+            <!-- 1 -->
+<div class="col-lg-3 item"><div class="industry-card" onclick="openIndustry('restaurant')"><i class="fa-solid fa-utensils industry-icon"></i><h5>Restaurant</h5></div></div>
+
+<!-- 2 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-mug-hot industry-icon"></i><h5>Café</h5></div></div>
+
+<!-- 3 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-dumbbell industry-icon"></i><h5>Gym & Fitness</h5></div></div>
+
+<!-- 4 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-cart-shopping industry-icon"></i><h5>E-Commerce</h5></div></div>
+
+<!-- 5 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-building industry-icon"></i><h5>Real Estate</h5></div></div>
+
+<!-- 6 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-laptop-code industry-icon"></i><h5>SaaS / Software</h5></div></div>
+
+<!-- 7 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-graduation-cap industry-icon"></i><h5>Education</h5></div></div>
+
+<!-- 8 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-heart-pulse industry-icon"></i><h5>Healthcare</h5></div></div>
+
+<!-- 9 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-plane-departure industry-icon"></i><h5>Travel Agency</h5></div></div>
+
+<!-- 10 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-coins industry-icon"></i><h5>Finance</h5></div></div>
+
+<!-- 11 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-shield-halved industry-icon"></i><h5>Insurance</h5></div></div>
+
+<!-- 12 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-gavel industry-icon"></i><h5>Legal Services</h5></div></div>
+
+<!-- 13 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bullhorn industry-icon"></i><h5>Marketing Agency</h5></div></div>
+
+<!-- 14 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-camera-retro industry-icon"></i><h5>Photography</h5></div></div>
+
+<!-- 15 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-calendar-check industry-icon"></i><h5>Event Management</h5></div></div>
+
+<!-- 16 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hammer industry-icon"></i><h5>Construction</h5></div></div>
+
+<!-- 17 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-couch industry-icon"></i><h5>Interior Design</h5></div></div>
+
+<!-- 18 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-car industry-icon"></i><h5>Automobile</h5></div></div>
+
+<!-- 19 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-scissors industry-icon"></i><h5>Beauty Salon</h5></div></div>
+
+<!-- 20 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-shirt industry-icon"></i><h5>Fashion</h5></div></div>
+
+<!-- 21 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-gem industry-icon"></i><h5>Jewellery</h5></div></div>
+
+<!-- 22 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-couch industry-icon"></i><h5>Furniture</h5></div></div>
+
+<!-- 23 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-truck industry-icon"></i><h5>Logistics</h5></div></div>
+
+<!-- 24 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-pills industry-icon"></i><h5>Pharmacy</h5></div></div>
+
+<!-- 25 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hotel industry-icon"></i><h5>Hotel & Resort</h5></div></div>
+
+<!-- 26 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hand-holding-heart industry-icon"></i><h5>NGO</h5></div></div>
+
+<!-- 27 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-rocket industry-icon"></i><h5>Startups</h5></div></div>
+
+<!-- 28 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-gamepad industry-icon"></i><h5>Gaming</h5></div></div>
+
+<!-- 29 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-newspaper industry-icon"></i><h5>News / Media</h5></div></div>
+
+<!-- 30 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-futbol industry-icon"></i><h5>Sports</h5></div></div>
+
+<!-- 31 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-school industry-icon"></i><h5>School</h5></div></div>
+
+<!-- 32 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-chalkboard-user industry-icon"></i><h5>Coaching Institute</h5></div></div>
+
+<!-- 33 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-book industry-icon"></i><h5>Online Courses</h5></div></div>
+
+<!-- 34 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-link industry-icon"></i><h5>Affiliate Marketing</h5></div></div>
+
+<!-- 35 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-video industry-icon"></i><h5>Content Creator</h5></div></div>
+
+<!-- 36 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-microphone industry-icon"></i><h5>Podcast</h5></div></div>
+
+<!-- 37 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-handshake industry-icon"></i><h5>Consulting</h5></div></div>
+
+<!-- 38 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-briefcase industry-icon"></i><h5>Corporate</h5></div></div>
+
+<!-- 39 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-store industry-icon"></i><h5>Retail Shop</h5></div></div>
+
+<!-- 40 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bag-shopping industry-icon"></i><h5>Marketplace</h5></div></div>
+
+<!-- 41 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-train industry-icon"></i><h5>Transport</h5></div></div>
+
+<!-- 42 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-ship industry-icon"></i><h5>Shipping</h5></div></div>
+
+<!-- 43 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-plane industry-icon"></i><h5>Aviation</h5></div></div>
+
+<!-- 44 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-leaf industry-icon"></i><h5>Organic Products</h5></div></div>
+
+<!-- 45 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-seedling industry-icon"></i><h5>Agriculture</h5></div></div>
+
+<!-- 46 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-robot industry-icon"></i><h5>AI Tools</h5></div></div>
+
+<!-- 47 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-cloud industry-icon"></i><h5>Cloud Services</h5></div></div>
+
+<!-- 48 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-shield industry-icon"></i><h5>Cyber Security</h5></div></div>
+
+<!-- 49 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-server industry-icon"></i><h5>IT Services</h5></div></div>
+
+<!-- 50 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-code industry-icon"></i><h5>Web Development</h5></div></div>
+
+<!-- 51 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-mobile-screen industry-icon"></i><h5>Mobile Apps</h5></div></div>
+
+<!-- 52 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-pen industry-icon"></i><h5>Blogging</h5></div></div>
+
+<!-- 53 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-user industry-icon"></i><h5>Portfolio</h5></div></div>
+
+<!-- 54 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-box industry-icon"></i><h5>Subscription Box</h5></div></div>
+
+<!-- 55 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-burger industry-icon"></i><h5>Food Delivery</h5></div></div>
+
+<!-- 56 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-headset industry-icon"></i><h5>BPO / Call Center</h5></div></div>
+
+<!-- 57 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-wallet industry-icon"></i><h5>Fintech</h5></div></div>
+
+<!-- 58 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-flask industry-icon"></i><h5>Biotech</h5></div></div>
+
+<!-- 59 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-industry industry-icon"></i><h5>Manufacturing</h5></div></div>
+
+<!-- 60 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-warehouse industry-icon"></i><h5>Warehousing</h5></div></div>
+
+<!-- 61 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-recycle industry-icon"></i><h5>Waste Management</h5></div></div>
+
+<!-- 62 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-solar-panel industry-icon"></i><h5>Solar Energy</h5></div></div>
+
+<!-- 63 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-oil-well industry-icon"></i><h5>Oil & Gas</h5></div></div>
+
+<!-- 64 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hospital industry-icon"></i><h5>Hospitals</h5></div></div>
+
+<!-- 65 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-brain industry-icon"></i><h5>Psychology</h5></div></div>
+
+<!-- 66 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-dna industry-icon"></i><h5>Genetics</h5></div></div>
+
+<!-- 67 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-globe industry-icon"></i><h5>International Trade</h5></div></div>
+
+<!-- 68 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-building-columns industry-icon"></i><h5>Banking</h5></div></div>
+
+<!-- 69 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-chart-line industry-icon"></i><h5>Stock Market</h5></div></div>
+
+<!-- 70 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-coins industry-icon"></i><h5>Crypto</h5></div></div>
+
+<!-- 71 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-music industry-icon"></i><h5>Music Industry</h5></div></div>
+
+<!-- 72 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-film industry-icon"></i><h5>Film / Cinema</h5></div></div>
+
+<!-- 73 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-paintbrush industry-icon"></i><h5>Design Studio</h5></div></div>
+
+<!-- 74 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-gamepad industry-icon"></i><h5>Esports</h5></div></div>
+
+<!-- 75 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hand-holding-dollar industry-icon"></i><h5>Investment</h5></div></div>
+
+<!-- 76 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-taxi industry-icon"></i><h5>Taxi / Cab Service</h5></div></div>
+
+<!-- 77 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-biking industry-icon"></i><h5>Delivery Riders</h5></div></div>
+
+<!-- 78 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-house industry-icon"></i><h5>Home Services</h5></div></div>
+
+<!-- 79 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-wifi industry-icon"></i><h5>Telecom</h5></div></div>
+
+<!-- 80 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-battery-full industry-icon"></i><h5>Electronics</h5></div></div>
+
+<!-- 81 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tree industry-icon"></i><h5>Environment</h5></div></div>
+
+<!-- 82 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-running industry-icon"></i><h5>Sports Training</h5></div></div>
+
+<!-- 83 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-children industry-icon"></i><h5>Kids Education</h5></div></div>
+
+<!-- 84 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-utensils industry-icon"></i><h5>Food Industry</h5></div></div>
+
+<!-- 85 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-boxes-stacked industry-icon"></i><h5>Supply Chain</h5></div></div>
+
+<!-- 86 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tractor industry-icon"></i><h5>Farming Equipment</h5></div></div>
+
+<!-- 87 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-shuttle-van industry-icon"></i><h5>Transport Logistics</h5></div></div>
+
+<!-- 88 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-user-tie industry-icon"></i><h5>HR Services</h5></div></div>
+
+<!-- 89 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-people-group industry-icon"></i><h5>Recruitment</h5></div></div>
+
+<!-- 90 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-house-chimney industry-icon"></i><h5>Architecture</h5></div></div>
+
+<!-- 91 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-medal industry-icon"></i><h5>Sports Clubs</h5></div></div>
+
+<!-- 92 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-masks-theater industry-icon"></i><h5>Theatre</h5></div></div>
+
+<!-- 93 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hands-helping industry-icon"></i><h5>Social Services</h5></div></div>
+
+<!-- 94 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-lightbulb industry-icon"></i><h5>Innovation Labs</h5></div></div>
+
+<!-- 95 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-vial industry-icon"></i><h5>Research Labs</h5></div></div>
+
+<!-- 96 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-satellite industry-icon"></i><h5>Space Tech</h5></div></div>
+
+<!-- 97 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-microchip industry-icon"></i><h5>Semiconductors</h5></div></div>
+
+<!-- 98 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-print industry-icon"></i><h5>Printing Press</h5></div></div>
+
+<!-- 99 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-school-flag industry-icon"></i><h5>Universities</h5></div></div>
+
+<!-- 100 -->
+<div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-city industry-icon"></i><h5>Smart Cities</h5></div></div>
+            <!-- 101 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-user-astronaut industry-icon"></i><h5>Space Research</h5></div></div>
+
+            <!-- 102 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-vr-cardboard industry-icon"></i><h5>VR / AR Tech</h5></div></div>
+
+            <!-- 103 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-brain industry-icon"></i><h5>AI Research</h5></div></div>
+
+            <!-- 104 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-shield-virus industry-icon"></i><h5>Cyber Defense</h5></div></div>
+
+            <!-- 105 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-database industry-icon"></i><h5>Data Analytics</h5></div></div>
+
+            <!-- 106 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-network-wired industry-icon"></i><h5>Networking</h5></div></div>
+
+            <!-- 107 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-screwdriver-wrench industry-icon"></i><h5>Repair Services</h5></div></div>
+
+            <!-- 108 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-house-laptop industry-icon"></i><h5>Remote Work</h5></div></div>
+
+            <!-- 109 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-chalkboard industry-icon"></i><h5>Online Teaching</h5></div></div>
+
+            <!-- 110 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-language industry-icon"></i><h5>Translation Services</h5></div></div>
+
+            <!-- 111 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-globe industry-icon"></i><h5>Tourism</h5></div></div>
+
+            <!-- 112 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-passport industry-icon"></i><h5>Visa Services</h5></div></div>
+
+            <!-- 113 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-suitcase industry-icon"></i><h5>Travel Planning</h5></div></div>
+
+            <!-- 114 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-map-location-dot industry-icon"></i><h5>Navigation Apps</h5></div></div>
+
+            <!-- 115 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-mountain industry-icon"></i><h5>Adventure Sports</h5></div></div>
+
+            <!-- 116 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-hiking industry-icon"></i><h5>Hiking Tours</h5></div></div>
+
+            <!-- 117 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bicycle industry-icon"></i><h5>Cycling Industry</h5></div></div>
+
+            <!-- 118 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-ice-cream industry-icon"></i><h5>Dairy & Ice Cream</h5></div></div>
+
+            <!-- 119 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-wine-bottle industry-icon"></i><h5>Beverages</h5></div></div>
+
+            <!-- 120 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bread-slice industry-icon"></i><h5>Bakery</h5></div></div>
+
+            <!-- 121 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-apple-whole industry-icon"></i><h5>Food Supply</h5></div></div>
+
+            <!-- 122 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-truck-fast industry-icon"></i><h5>Express Delivery</h5></div></div>
+
+            <!-- 123 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-box-open industry-icon"></i><h5>Packaging Industry</h5></div></div>
+
+            <!-- 124 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-receipt industry-icon"></i><h5>Accounting</h5></div></div>
+
+            <!-- 125 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-file-invoice industry-icon"></i><h5>Tax Services</h5></div></div>
+
+            <!-- 126 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-scale-balanced industry-icon"></i><h5>Law Firm</h5></div></div>
+
+            <!-- 127 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-user-graduate industry-icon"></i><h5>Career Counseling</h5></div></div>
+
+            <!-- 128 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-chalkboard industry-icon"></i><h5>Training Centers</h5></div></div>
+
+            <!-- 129 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-building-flag industry-icon"></i><h5>Government Services</h5></div></div>
+
+            <!-- 130 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-handshake-angle industry-icon"></i><h5>NGO Support</h5></div></div>
+
+            <!-- 131 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-people-roof industry-icon"></i><h5>Community Services</h5></div></div>
+
+            <!-- 132 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-digging industry-icon"></i><h5>Mining</h5></div></div>
+
+            <!-- 133 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-oil-can industry-icon"></i><h5>Fuel Industry</h5></div></div>
+
+            <!-- 134 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bolt industry-icon"></i><h5>Electricity</h5></div></div>
+
+            <!-- 135 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-sun industry-icon"></i><h5>Renewable Energy</h5></div></div>
+
+            <!-- 136 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-water industry-icon"></i><h5>Water Supply</h5></div></div>
+
+            <!-- 137 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-fish industry-icon"></i><h5>Fishing Industry</h5></div></div>
+
+            <!-- 138 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tree-city industry-icon"></i><h5>Urban Planning</h5></div></div>
+
+            <!-- 139 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-helmet-safety industry-icon"></i><h5>Safety Services</h5></div></div>
+
+            <!-- 140 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-user-shield industry-icon"></i><h5>Security Services</h5></div></div>
+
+            <!-- 141 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-lungs industry-icon"></i><h5>Respiratory Care</h5></div></div>
+
+            <!-- 142 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tooth industry-icon"></i><h5>Dental Care</h5></div></div>
+
+            <!-- 143 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-eye industry-icon"></i><h5>Eye Care</h5></div></div>
+
+            <!-- 144 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-baby industry-icon"></i><h5>Maternity Care</h5></div></div>
+
+            <!-- 145 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-paw industry-icon"></i><h5>Pet Care</h5></div></div>
+
+            <!-- 146 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-dog industry-icon"></i><h5>Pet Services</h5></div></div>
+
+            <!-- 147 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-cat industry-icon"></i><h5>Pet Clinics</h5></div></div>
+
+            <!-- 148 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-seedling industry-icon"></i><h5>Organic Farming</h5></div></div>
+
+            <!-- 149 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tractor industry-icon"></i><h5>Agriculture Tech</h5></div></div>
+
+            <!-- 150 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-industry industry-icon"></i><h5>Heavy Industry</h5></div></div>
+
+            <!-- 151 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-microscope industry-icon"></i><h5>Medical Research</h5></div></div>
+
+            <!-- 152 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-capsules industry-icon"></i><h5>Pharmaceutical R&D</h5></div></div>
+
+            <!-- 153 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-syringe industry-icon"></i><h5>Vaccination Centers</h5></div></div>
+
+            <!-- 154 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-hospital-user industry-icon"></i><h5>Clinic Management</h5></div></div>
+
+            <!-- 155 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-stethoscope industry-icon"></i><h5>Doctor Consultation</h5></div></div>
+
+            <!-- 156 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-notes-medical industry-icon"></i><h5>Medical Records</h5></div></div>
+
+            <!-- 157 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-microscope industry-icon"></i><h5>Biochemistry Labs</h5></div></div>
+
+            <!-- 158 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-disease industry-icon"></i><h5>Epidemiology</h5></div></div>
+
+            <!-- 159 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-person-cane industry-icon"></i><h5>Geriatric Care</h5></div></div>
+
+            <!-- 160 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-child industry-icon"></i><h5>Pediatric Care</h5></div></div>
+
+            <!-- 161 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-book-medical industry-icon"></i><h5>Medical Education</h5></div></div>
+
+            <!-- 162 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-robot industry-icon"></i><h5>Robotics Engineering</h5></div></div>
+
+            <!-- 163 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-microchip industry-icon"></i><h5>Embedded Systems</h5></div></div>
+
+            <!-- 164 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-cube industry-icon"></i><h5>3D Printing</h5></div></div>
+
+            <!-- 165 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-satellite-dish industry-icon"></i><h5>Telecommunication Tech</h5></div></div>
+
+            <!-- 166 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-broadcast-tower industry-icon"></i><h5>Broadcasting</h5></div></div>
+
+            <!-- 167 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-radio industry-icon"></i><h5>Radio Industry</h5></div></div>
+
+            <!-- 168 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-tv industry-icon"></i><h5>Television Industry</h5></div></div>
+
+            <!-- 169 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-photo-film industry-icon"></i><h5>Media Production</h5></div></div>
+
+            <!-- 170 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-clapperboard industry-icon"></i><h5>Film Production</h5></div></div>
+
+            <!-- 171 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-ticket industry-icon"></i><h5>Entertainment Ticketing</h5></div></div>
+
+            <!-- 172 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-masks-theater industry-icon"></i><h5>Performing Arts</h5></div></div>
+
+            <!-- 173 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-guitar industry-icon"></i><h5>Live Music Events</h5></div></div>
+
+            <!-- 174 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-headphones industry-icon"></i><h5>Audio Production</h5></div></div>
+
+            <!-- 175 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-record-vinyl industry-icon"></i><h5>Music Label</h5></div></div>
+
+            <!-- 176 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-pen-nib industry-icon"></i><h5>Publishing Industry</h5></div></div>
+
+            <!-- 177 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-book-open industry-icon"></i><h5>Library Systems</h5></div></div>
+
+            <!-- 178 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-newspaper industry-icon"></i><h5>Digital Journalism</h5></div></div>
+
+            <!-- 179 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-blog industry-icon"></i><h5>Blog Networks</h5></div></div>
+
+            <!-- 180 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-wifi industry-icon"></i><h5>Internet Providers</h5></div></div>
+
+            <!-- 181 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-cloud-arrow-up industry-icon"></i><h5>Cloud Computing</h5></div></div>
+
+            <!-- 182 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-lock industry-icon"></i><h5>Data Protection</h5></div></div>
+
+            <!-- 183 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-fingerprint industry-icon"></i><h5>Biometric Systems</h5></div></div>
+
+            <!-- 184 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-credit-card industry-icon"></i><h5>Payment Systems</h5></div></div>
+
+            <!-- 185 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-money-bill-transfer industry-icon"></i><h5>Money Transfer</h5></div></div>
+
+            <!-- 186 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-building-columns industry-icon"></i><h5>Investment Banking</h5></div></div>
+
+            <!-- 187 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-piggy-bank industry-icon"></i><h5>Microfinance</h5></div></div>
+
+            <!-- 188 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-chart-pie industry-icon"></i><h5>Financial Analytics</h5></div></div>
+
+            <!-- 189 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-warehouse industry-icon"></i><h5>Cold Storage</h5></div></div>
+
+            <!-- 190 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-truck-ramp-box industry-icon"></i><h5>Freight Transport</h5></div></div>
+
+            <!-- 191 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-plane-circle-check industry-icon"></i><h5>Air Cargo</h5></div></div>
+
+            <!-- 192 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-ship industry-icon"></i><h5>Marine Transport</h5></div></div>
+
+            <!-- 193 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-road industry-icon"></i><h5>Highway Infrastructure</h5></div></div>
+
+            <!-- 194 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-bridge industry-icon"></i><h5>Bridge Construction</h5></div></div>
+
+            <!-- 195 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-city industry-icon"></i><h5>Urban Development</h5></div></div>
+
+            <!-- 196 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-house-circle-check industry-icon"></i><h5>Smart Housing</h5></div></div>
+
+            <!-- 197 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-solar-panel industry-icon"></i><h5>Solar Farms</h5></div></div>
+
+            <!-- 198 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-wind industry-icon"></i><h5>Wind Energy</h5></div></div>
+
+            <!-- 199 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-recycle industry-icon"></i><h5>Recycling Plants</h5></div></div>
+
+            <!-- 200 -->
+            <div class="col-lg-3 item"><div class="industry-card"><i class="fa-solid fa-leaf industry-icon"></i><h5>Sustainability Tech</h5></div></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <h3>Growvix</h3>
+        <p>Modern Digital Experiences</p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+document.getElementById("search").addEventListener("keyup", function () {
+    let value = this.value.toLowerCase();
+    let items = document.querySelectorAll(".item");
+
+    items.forEach(function (el) {
+        let text = el.innerText.toLowerCase();
+        el.style.display = text.includes(value) ? "block" : "none";
+    });
+});
+    </script>
+
+</body>
+</html>
